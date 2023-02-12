@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-image: url(./assets/bg.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+/* NAV BAR */
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #101111d5;
+    /* padding: atas bawah */
+    /* padding: 20px 50px;  */
+    padding: 3vh 7vw;
+    position: static;
+    top: 0;
+}
+.logo span{
+    color: white;
+    font-family: pt 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.pages{
+    width: 15%;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+}
+.pages a{
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; 
+    text-align: center;
+    font-size: 13px;
+    /* padding: 0 2vw; */
+}
+
+/* CONTENT */
+.content{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+  .container {
+    font-size: 16px;
+    max-width: 32em;
+    width: 90vw;
+    padding: 2%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 40px;
+    box-shadow: 0 0 20px black; 
+    text-align: center;
+  }
+  .search-container {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+  }
+  .search-container input {
+    font-size: 1em;
+    padding: 7px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    outline: none;
+  }
+  .search-container button {
+    color: white;
+    font-size: 1em;
+    background-color: #1a532b;
+    border: none;
+    font-weight: 300;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif; 
+  }
+  img {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
+  .details {
+    text-align: center;
+    padding: 0.6em 0;
+  }
+  .details h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .details h4 {
+    font-size: 1em;
+    font-weight: 400;
+  }
+  #recipe-container {
+    background-color: #ffffff;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.6em;
+    display: none;
+  }
+  #recipe-container pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 2.5em 1.2em 1.2em 1.2em;
+    font-size: 0.92em;
+    color: #303040;
+  }
+  ul {
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+    color: #303040;
+    text-transform: capitalize;
+  }
+  h3 {
+    text-align: center;
+    color: #202030;
+  }
+  @media screen and (max-width: 500px) {
+    .container {
+      font-size: 14px;
+    }
+  }
